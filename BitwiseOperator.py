@@ -1,32 +1,10 @@
-# Python program demonstrating different bitwise operators
-
-# Initial values
-a = 10  # In binary: 1010
-b = 4   # In binary: 0100
-
-print("a =", a, "-> Binary:", bin(a))
-print("b =", b, "-> Binary:", bin(b))
-
-# Bitwise AND
-print("\nBitwise AND (a & b):")
-print(f"{a} & {b} = {a & b} -> Binary: {bin(a & b)}")
-
-# Bitwise OR
-print("\nBitwise OR (a | b):")
-print(f"{a} | {b} = {a | b} -> Binary: {bin(a | b)}")
-
-# Bitwise XOR
-print("\nBitwise XOR (a ^ b):")
-print(f"{a} ^ {b} = {a ^ b} -> Binary: {bin(a ^ b)}")
-
-# Bitwise NOT
-print("\nBitwise NOT (~a):")
-print(f"~{a} = {~a} -> Binary: {bin(~a)}")
-
-# Left Shift
-print("\nLeft Shift (a << 2):")
-print(f"{a} << 2 = {a << 2} -> Binary: {bin(a << 2)}")
-
-# Right Shift
-print("\nRight Shift (a >> 2):")
-print(f"{a} >> 2 = {a >> 2} -> Binary: {bin(a >> 2)}")
+# Program using different bitwise operators 
+a = 10  # 1010 in binary 
+b = 4   # 0100 in binary 
+ 
+print("Bitwise AND:", a & b)   # 0000 = 0 
+print("Bitwise OR:", a | b)    # 1110 = 14 
+print("Bitwise XOR:", a ^ b)   # 1110 = 14 
+print("Bitwise NOT:", ~a)      # -11 (2's complement) 
+print("Left shift:", a << 2)   # 101000 = 40 
+print("Right shift:", a >> 2)  # 0010 = 2
