@@ -1,7 +1,13 @@
-for i in range(3):
-    spaces = ' ' * (2 * i)
-    bits = 7 - 4 * i
-    pattern = ''
-    for j in range(bits):
-        pattern += '1' if j % 2 == 0 else '0'
-    print(spaces + pattern)
+# First row (7 characters)
+for i in range(1, 8):
+    print(i % 2, end="")
+print()
+
+# Second row (3 characters, centered)
+print("  ", end="")  # 2 spaces
+for i in range(1, 4):
+    print(i % 2, end="")
+print()
+
+# Third row (1 character, centered)
+print("   1")
